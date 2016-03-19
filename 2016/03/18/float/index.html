@@ -57,16 +57,37 @@
 
 
 
-<meta name="description" content="I can do it!">
+<meta name="description" content="要注意以下几点：　
+　　　
+1、 浮动元素会被自动设置成块级元素，相当于给元素设置了display:block（块级元素能设置宽和高，而行内元素则不可以）。
+2、 浮动元素后边的非浮动元素显示问题。
+3、 多个浮动方向一致的元素使用流式排列，此时要注意浮动元素的高度。
+4、子元素全为浮动元素的元素高度自适应问题。
+浮动元素后的非浮动元素问题
+浮动元素后边的元素若是非浮动行内元素且因为定位产生重叠时">
 <meta property="og:type" content="article">
 <meta property="og:title" content="float">
 <meta property="og:url" content="http://yoursite.com/2016/03/18/float/index.html">
 <meta property="og:site_name" content="Liuyanling's blog">
-<meta property="og:description" content="I can do it!">
-<meta property="og:updated_time" content="2016-03-18T13:48:45.587Z">
+<meta property="og:description" content="要注意以下几点：　
+　　　
+1、 浮动元素会被自动设置成块级元素，相当于给元素设置了display:block（块级元素能设置宽和高，而行内元素则不可以）。
+2、 浮动元素后边的非浮动元素显示问题。
+3、 多个浮动方向一致的元素使用流式排列，此时要注意浮动元素的高度。
+4、子元素全为浮动元素的元素高度自适应问题。
+浮动元素后的非浮动元素问题
+浮动元素后边的元素若是非浮动行内元素且因为定位产生重叠时">
+<meta property="og:updated_time" content="2016-03-19T04:57:52.259Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="float">
-<meta name="twitter:description" content="I can do it!">
+<meta name="twitter:description" content="要注意以下几点：　
+　　　
+1、 浮动元素会被自动设置成块级元素，相当于给元素设置了display:block（块级元素能设置宽和高，而行内元素则不可以）。
+2、 浮动元素后边的非浮动元素显示问题。
+3、 多个浮动方向一致的元素使用流式排列，此时要注意浮动元素的高度。
+4、子元素全为浮动元素的元素高度自适应问题。
+浮动元素后的非浮动元素问题
+浮动元素后边的元素若是非浮动行内元素且因为定位产生重叠时">
 
 
 
@@ -140,7 +161,7 @@
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -150,7 +171,7 @@
             
               <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
-            Categories
+            Kategorien
           </a>
         </li>
       
@@ -160,7 +181,7 @@
             
               <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
             
-            About
+            Über
           </a>
         </li>
       
@@ -170,7 +191,7 @@
             
               <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -243,7 +264,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-03-18T21:39:21+08:00" content="2016-03-18">
               2016-03-18
             </time>
@@ -271,7 +292,16 @@
       
 
       
-        
+        <p>要注意以下几点：　
+　　　</p>
+<p>1、 浮动元素会被自动设置成块级元素，相当于给元素设置了display:block（块级元素能设置宽和高，而行内元素则不可以）。</p>
+<p>2、 浮动元素后边的非浮动元素显示问题。</p>
+<p>3、 多个浮动方向一致的元素使用流式排列，此时要注意浮动元素的高度。</p>
+<p>4、子元素全为浮动元素的元素高度自适应问题。</p>
+<p>浮动元素后的非浮动元素问题</p>
+<p>浮动元素后边的元素若是非浮动行内元素且因为定位产生重叠时，行内元素边框、背景和内容都在该浮动元素“之上”显示，若是非浮动块级元素跟在浮动元素后边且在定位后产生重叠时，该块级元素边框和背景在该浮动元素“之下”显示，只有内容在浮动元素不在浮动元素“之下”显示。</p>
+<p>子元素全为浮动元素高度自适应问题<br>：后边的Clear:both;其实就是利用清除浮动来把外层的div撑开，                             </p>
+
       
     </div>
 
@@ -353,10 +383,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -373,7 +403,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">5</span>
-              <span class="site-state-item-name">posts</span>
+              <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
           
@@ -383,7 +413,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">Tags</span>
               </a>
             </div>
           
@@ -464,7 +494,7 @@
               
             
             
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
@@ -494,7 +524,7 @@
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
