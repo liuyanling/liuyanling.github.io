@@ -58,24 +58,24 @@
 
 
 <meta name="description" content="之前看过w3school上的资料和极客学院的视频，对position这个属性有一点了解，奈何这个属性太常用，还是翻翻博客总结总结了解透彻一点的好。（可能有错误哦，请指正！！！）
-##position属性主要有4个属性值：
-　　默认”position：static“,元素处于普通流，偏移量（即left，right，bottom，top，z-index）没有效果。
-　　相对定位”position：">
+##文档流##   　　将窗体自上而下分成一行行, 并在每行中按从左至右的顺序排放元素,即为文档流。
+  　　只有三种情况会使得元素脱离文档流，分别是：浮动、绝对定位和相对定位。
+##position属性##主要有4个">
 <meta property="og:type" content="article">
 <meta property="og:title" content="position属性">
 <meta property="og:url" content="http://yoursite.com/2016/03/12/position属性/index.html">
 <meta property="og:site_name" content="Liuyanling's blog">
 <meta property="og:description" content="之前看过w3school上的资料和极客学院的视频，对position这个属性有一点了解，奈何这个属性太常用，还是翻翻博客总结总结了解透彻一点的好。（可能有错误哦，请指正！！！）
-##position属性主要有4个属性值：
-　　默认”position：static“,元素处于普通流，偏移量（即left，right，bottom，top，z-index）没有效果。
-　　相对定位”position：">
-<meta property="og:updated_time" content="2016-03-12T06:44:00.573Z">
+##文档流##   　　将窗体自上而下分成一行行, 并在每行中按从左至右的顺序排放元素,即为文档流。
+  　　只有三种情况会使得元素脱离文档流，分别是：浮动、绝对定位和相对定位。
+##position属性##主要有4个">
+<meta property="og:updated_time" content="2016-03-18T13:49:24.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="position属性">
 <meta name="twitter:description" content="之前看过w3school上的资料和极客学院的视频，对position这个属性有一点了解，奈何这个属性太常用，还是翻翻博客总结总结了解透彻一点的好。（可能有错误哦，请指正！！！）
-##position属性主要有4个属性值：
-　　默认”position：static“,元素处于普通流，偏移量（即left，right，bottom，top，z-index）没有效果。
-　　相对定位”position：">
+##文档流##   　　将窗体自上而下分成一行行, 并在每行中按从左至右的顺序排放元素,即为文档流。
+  　　只有三种情况会使得元素脱离文档流，分别是：浮动、绝对定位和相对定位。
+##position属性##主要有4个">
 
 
 
@@ -149,7 +149,7 @@
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -159,7 +159,7 @@
             
               <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -169,7 +169,7 @@
             
               <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
             
-            Über
+            About
           </a>
         </li>
       
@@ -179,7 +179,7 @@
             
               <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -252,7 +252,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-03-12T13:51:45+08:00" content="2016-03-12">
               2016-03-12
             </time>
@@ -281,13 +281,17 @@
 
       
         <p>　　之前看过w3school上的资料和极客学院的视频，对position这个属性有一点了解，奈何这个属性太常用，还是翻翻博客总结总结了解透彻一点的好。（可能有错误哦，请指正！！！）</p>
-<p>##<strong>position属性</strong><br>主要有4个属性值：</p>
+<p>##文档流##<br>   　　将窗体自上而下分成一行行, 并在每行中按从左至右的顺序排放元素,即为文档流。</p>
+<p>  　　只有三种情况会使得元素脱离文档流，分别是：浮动、绝对定位和相对定位。</p>
+<p>##position属性##<br>主要有4个属性值：</p>
 <p>　　默认”<strong>position：static</strong>“,元素处于普通流，偏移量（即left，right，bottom，top，z-index）没有效果。</p>
-<p>　　相对定位”<strong>position：relative</strong>“，是相对于元素本身位置进行定位，在流中。可以用left等改变当前所在位置。元素位置变化后，它最初所占的物理空间仍然存在。它的相邻元素不受影响。</p>
-<p>　　绝对定位”<strong>position:absolute</strong>“,在页面中好像不占位子了，飘出文档流，且元素自身的物理空间也同时消失。可用left等改变当前位置，但要特别注意：<br><strong>如果某个元素绝对定位了，移动时，它的参照物的选取：从离自身最近的元素起，观察是否设置了相对定位，如果有设置将以该元素为定位参照物。如果没有，将往其祖先元素寻找相对定位元素，一直找到html为止。此为relative和absolute的结合使用。</strong>所以，绝对定位元素的任何祖先元素没有进行任何的“relative”或者“absolute”设置，那么绝对定位的元素的参考物就是html。</p>
-<p>　　固定布局：”<strong>position:fixed</strong>“,在当前页面固定位置不动，页面怎么下拉滚动条，它都固定在浏览器的当前位置，浮于上方，与文档流无关。比如：页面向下移动，需要一个菜单条一直都出现在顶部的话，就是用fixed做的。</p>
-<p>顺带一句float：浮动，不在普通流中，创建浮动框可使文本围绕图像。</p>
-<p>参考：<br><a href="http://blog.jobbole.com/49320/" target="_blank" rel="external">http://blog.jobbole.com/49320/</a><br><a href="http://www.w3school.com.cn/cssref/pr_class_position.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_class_position.asp</a></p>
+<p>　　相对定位”<strong>position：relative</strong>“，是相对于元素本身位置进行定位，<strong>在流中</strong>。可以用left等改变当前所在位置。元素位置变化后，它最初所占的物理空间仍然存在。它的相邻元素不受影响。即其它元素不会占用相对定位元素当初的位置，此外，其它元素没有进行位置移动时相对定位元素可能和其它元素重叠。</p>
+<p>　　绝对定位”<strong>position:absolute</strong>“,在页面中好像不占位子了，<strong>飘出文档流，他的下一个兄弟元素会顶上它的位置，</strong>且元素自身的物理空间也同时消失。可用left等改变当前位置，但要特别注意：<br><strong>如果某个元素绝对定位了，移动时，它的参照物的选取：从离自身最近的元素起，观察是否设置了相对定位，如果有设置将以该元素为定位参照物。如果没有，将往其祖先元素寻找相对定位元素，一直找到html为止。此为relative和absolute的结合使用。</strong>所以，绝对定位元素的任何祖先元素没有进行任何的“relative”或者“absolute”设置，那么绝对定位的元素的参考物就是html（不是body，body框还是在html框内部的）。<strong>absoulte是根据祖先类的border进行的定位。</strong></p>
+<p>　　固定布局：”<strong>position:fixed</strong>“,在当前页面固定位置不动，页面怎么下拉滚动条，它都固定在浏览器的当前位置，浮于上方，<strong>与文档流无关，总是以body为定位对象的</strong>，按照浏览器的窗口进行定位。比如：页面向下移动，需要一个菜单条一直都出现在顶部的话，就是用fixed做的。</p>
+<p>　　<strong>Note：</strong> 绝对(absolute)定位对象在可视区域之外会导致滚动条出现。而放置相对(relative)定位对象在可视区域之外，滚动条不会出现。</p>
+<p><strong>z-index属性和层级树</strong>：如果不对节点设定 position 属性, 位于文档流后面的节点会遮盖前面的节点.给元素设置“z-index”属性，<strong>首先要在这个元素上设置了“position”属性值为“relatvie”、“absolute”或者“fixed”之一</strong>。 当 position 设为 relative, absolute 或者 fixed, 而没有设置 z-index 时, IE8 以上和 W3C 浏览器 的 z-index <strong>默认值是 auto</strong>, 但 <strong>IE6 和 IE7 是 0</strong>　。　　　　　　　　　　　　　<br>　　　同层级：如果将 position 设为 relative , absolute 或者 fixed , 这样的节点会覆盖没有设置 position 属性或者属性值为 static 的节点.　　<br>          　　不同层级：我们对 A 和 B 都不设定 position, 但对 A 的子节点 A-1 设定 position:relative. 根据顺序规则, B 会覆盖 A, 又根据定位规则 A’ 会覆盖 B.如果 A, B 节点都定义了 position:relative, A 节点的 z-index 比 B 节点大, 那么 A 的子节点必定覆盖在 B 的子节点前面<strong>此为从父规则</strong>.　<br>              　　　<strong>父子关系是无法用z-index来设定上下关系的，一定是子级在上父级在下。</strong>
+　　</p>
+<p>参考：<br><a href="http://blog.jobbole.com/49320/" target="_blank" rel="external">http://blog.jobbole.com/49320/</a><br><a href="http://www.w3school.com.cn/cssref/pr_class_position.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_class_position.asp</a><br><a href="http://www.neoease.com/css-z-index-property-and-layering-tree/#position-rule" target="_blank" rel="external">http://www.neoease.com/css-z-index-property-and-layering-tree/#position-rule</a><br><a href="http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html" target="_blank" rel="external">http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html</a></p>
 
       
     </div>
@@ -318,6 +322,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/18/float/" rel="prev" title="float">
+                float <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -366,10 +374,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -385,8 +393,8 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
           
@@ -395,8 +403,8 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -477,7 +485,7 @@
               
             
             
-              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
@@ -507,7 +515,7 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
