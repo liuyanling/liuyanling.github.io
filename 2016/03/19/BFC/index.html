@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="博客，文章," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -57,16 +57,25 @@
 
 
 
-<meta name="description" content="欢迎来到我的博客！！！">
+<meta name="description" content="在float时，总能遇到{overflow：hidden}以及相邻元素margin有时不重叠的情况，一直不是很清楚其中原因，今天看了一些关于BFC的知识，发现答案原来在这里，为防止过两天又忘记，赶紧整理一下，做点笔记：
+  BFC(Block Formatting content)块级格式化上下文，一个独立的渲染区域，它规定内部如何布局都与此区域外部毫无关系。BFC是页面上一个隔离的独立容器，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my new post">
-<meta property="og:url" content="http://yoursite.com/2016/03/09/my-new-post/index.html">
+<meta property="og:title" content="BFC">
+<meta property="og:url" content="http://yoursite.com/2016/03/19/BFC/index.html">
 <meta property="og:site_name" content="Liuyanling's blog">
-<meta property="og:description" content="欢迎来到我的博客！！！">
-<meta property="og:updated_time" content="2016-03-10T07:32:56.588Z">
+<meta property="og:description" content="在float时，总能遇到{overflow：hidden}以及相邻元素margin有时不重叠的情况，一直不是很清楚其中原因，今天看了一些关于BFC的知识，发现答案原来在这里，为防止过两天又忘记，赶紧整理一下，做点笔记：
+  BFC(Block Formatting content)块级格式化上下文，一个独立的渲染区域，它规定内部如何布局都与此区域外部毫无关系。BFC是页面上一个隔离的独立容器，">
+<meta property="og:image" content="http://i.imgur.com/DfrIMLl.png">
+<meta property="og:image" content="http://i.imgur.com/i1p1V4V.png">
+<meta property="og:image" content="http://i.imgur.com/kronaYb.png">
+<meta property="og:image" content="http://i.imgur.com/J4Y0Ro6.png">
+<meta property="og:image" content="http://i.imgur.com/ugKAgHA.png">
+<meta property="og:updated_time" content="2016-03-20T07:44:11.181Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="my new post">
-<meta name="twitter:description" content="欢迎来到我的博客！！！">
+<meta name="twitter:title" content="BFC">
+<meta name="twitter:description" content="在float时，总能遇到{overflow：hidden}以及相邻元素margin有时不重叠的情况，一直不是很清楚其中原因，今天看了一些关于BFC的知识，发现答案原来在这里，为防止过两天又忘记，赶紧整理一下，做点笔记：
+  BFC(Block Formatting content)块级格式化上下文，一个独立的渲染区域，它规定内部如何布局都与此区域外部毫无关系。BFC是页面上一个隔离的独立容器，">
+<meta name="twitter:image" content="http://i.imgur.com/DfrIMLl.png">
 
 
 
@@ -84,7 +93,7 @@
   };
 </script>
 
-  <title> my new post | Liuyanling's blog </title>
+  <title> BFC | Liuyanling's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -232,7 +241,7 @@
             
             
               
-                my new post
+                BFC
               
             
           </h1>
@@ -244,8 +253,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-03-09T22:56:11+08:00" content="2016-03-09">
-              2016-03-09
+            <time itemprop="dateCreated" datetime="2016-03-19T21:16:39+08:00" content="2016-03-19">
+              2016-03-19
             </time>
           </span>
 
@@ -271,7 +280,109 @@
       
 
       
-        <p>欢迎来到我的博客！！！</p>
+        <p>  在float时，总能遇到{overflow：hidden}以及相邻元素margin有时不重叠的情况，一直不是很清楚其中原因，今天看了一些关于BFC的知识，发现答案原来在这里，为防止过两天又忘记，赶紧整理一下，做点笔记：</p>
+<p>  <strong>BFC</strong>(Block Formatting content)块级格式化上下文，一个独立的渲染区域，它规定内部如何布局都与此区域外部毫无关系。<font color="#A52A2A">BFC是页面上一个隔离的独立容器，容器里面的子元素不会影响外面的元素，反之亦如此。</font>  CSS2.1中规定满足下列CSS声明之一的元素便会生成BFC:   </p>
+<ul>
+<li>根元素  </li>
+<li>float的值不为none </li>
+<li>overflow的值不为visible(为auto,scroll,hidden) </li>
+<li>display的值为inline-block、table-cell、table-caption(非块级盒子)  </li>
+<li>position的值为absolute或fixed<br>BFC的布局规则有。（百度一下，你就知道）。。主要是：<font color="#A52A2A">要想邻接就必须是处于常规文档流（非float和绝对定位）的块级盒子,并且处于同一个BFC当中。同一个BFC中，两相邻的两box的margin才发生重叠。</font>  BFC中的元素的布局是不受外界的影响（我们往往利用这个特性来消除浮动元素对其非浮动的兄弟元素和其子元素带来的影响。）并且在一个BFC中，块盒与行盒（行盒由一行中所有的内联元素所组成）都会垂直的沿着其父元素的边框排列。   两个margin是邻接时，会产生折叠。邻接需满足一系列条件：。（百度一下，你就知道）。。主要就是：<font color="#A52A2A">浮动元素、绝对定位元素不与任何元素的外编辑产生折叠。</font> 原因就是脱离了文档流，会新建BFC。<br>BFC用来做什么： <strong> 1.</strong>不和浮动元素重叠。如下例：    HTML</li>
+</ul>
+<pre><code>&lt;div class=&quot;article&quot;&gt;
+&lt;div class=&quot;image&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;
+    我是内容我是内容我是内容我是内容我是内容 我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>CSS：</p>
+<pre><code>    .image{
+    width:100px;
+    height: 100px;
+    float: left;
+    background: #abc;
+}
+.content{
+    height:200px;
+    width: 150px;
+    background-color: darkcyan;
+}
+</code></pre><p>结果如下：</p>
+<p><img src="http://i.imgur.com/DfrIMLl.png" alt=""><br>  这是我们常说的创建浮动框可使文本围绕图像。但如果我们是想要用此方法进行自适应两栏布局，我们需要解决普通文档流对浮动元素的包围。于是对contBFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。ent加一条css渲染，.content{overflow:hidden;}此时出现了如下的效果：<br><img src="http://i.imgur.com/i1p1V4V.png" alt="">  <font color="008b8b">原因：overflow:hidden触发.content元素生成BFC,这样，容器外部的元素就不能影响其自身了。之前，我们的.image是浮动元素，生成BFC,所以不影响外面的元素，于是.content元素当其不存在一样布局。这应该就是float，position中的脱离文档流，被其余元素顶上的最终原因了。</font><br><strong>2.</strong>清除元素内部浮动  css（HTML代码不变）</p>
+<pre><code>.article{
+     width: 300px;
+     border:1px solid red;
+     padding:10px;
+ }
+ .image{
+     width:100px;
+     height: 100px;
+     float: left;
+     background: #abc;
+ }
+ .content{
+     height:200px;
+     width: 150px;
+     background-color: darkcyan;
+     float: right;
+ }
+</code></pre><p>结果如下：<br><img src="http://i.imgur.com/kronaYb.png" alt=""><br>  <font color="008b8b">原因：在进行普通流中的块级非替换元素的高度计算时，浮动子元素不参与计算。在计算生成了BFC的元素的高度时，其浮动子元素应该参与计算。所以，触发外部容器BFC，高度将重新计算。比如给.article加上属性overflow:hidden触发其BFC。</font>  <strong>3.</strong>j解决上下相邻两个元素重叠。    HTML:</p>
+<pre><code>&lt;div class=&quot;article&quot;&gt;
+&lt;div class=&quot;pare&quot;&gt;
+    &lt;div class=&quot;image&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;
+    我是内容我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内
+    容我是内容我是内容我是内容
+&lt;/div&gt;
+</code></pre><p><br>CSS:</p>
+<pre><code>.pare{
+        overflow: hidden;
+    }
+    .image{
+        width:100px;
+        height: 100px;
+        margin-bottom: 20px;
+        background: #abc;
+    }
+    .content{
+        height:200px;
+        width: 150px;
+        background-color: darkcyan;
+        margin-top: 20px;
+    }
+</code></pre><p> 结果如下：<img src="http://i.imgur.com/J4Y0Ro6.png" alt=""><br>  <font color="008b8b">原因：BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。也就是我们所说的叠加要在同一个BFC中。</font><br>问题：如下代码：</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    .image{
+        width:100px;
+        height: 100px;
+        margin-bottom: 20px;
+        background: #abc;
+        overflow: hidden;
+    }
+    .content{
+        height:200px;
+        width: 150px;
+        background-color: darkcyan;
+        margin-top: 20px;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;article&quot;&gt;
+    &lt;div class=&quot;image&quot;&gt;
+    &lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;
+    我是内容我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内
+    容我是内容我是内容我是内容
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+</code></pre><p>结果：<img src="http://i.imgur.com/ugKAgHA.png" alt=""><br>明明不在同一个BFC，为什么发生了折叠？？？</p>
 
       
     </div>
@@ -286,7 +397,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/博客，文章/" rel="tag">#博客，文章</a>
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
           
         </div>
       
@@ -295,13 +406,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/19/圣杯，双飞翼布局/" rel="next" title="圣杯，双飞翼布局">
+                <i class="fa fa-chevron-left"></i> 圣杯，双飞翼布局
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/10/hexo-github/" rel="prev" title="搭建静态博客：hexo+github">
-                搭建静态博客：hexo+github <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
