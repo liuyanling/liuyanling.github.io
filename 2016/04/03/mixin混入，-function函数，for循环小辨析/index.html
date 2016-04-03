@@ -57,29 +57,29 @@
 
 
 
-<meta name="description" content="sass中：$（cil_$i）本意是希望定义多个变量如：$cil_1,$cil_2等，但是这样做是不行的.　　　@for $i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
+<meta name="description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
 @mixin buju($i,$cols){
   .stati_#{$i}{
 background:white;
-@include">
+@">
 <meta property="og:type" content="article">
 <meta property="og:title" content="@mixin混入，@function函数，for循环小辨析">
 <meta property="og:url" content="http://yoursite.com/2016/04/03/mixin混入，-function函数，for循环小辨析/index.html">
 <meta property="og:site_name" content="Liuyanling's blog">
-<meta property="og:description" content="sass中：$（cil_$i）本意是希望定义多个变量如：$cil_1,$cil_2等，但是这样做是不行的.　　　@for $i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
+<meta property="og:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
 @mixin buju($i,$cols){
   .stati_#{$i}{
 background:white;
-@include">
+@">
 <meta property="og:image" content="http://i.imgur.com/fV7Mq5z.png">
-<meta property="og:updated_time" content="2016-04-03T08:06:18.882Z">
+<meta property="og:updated_time" content="2016-04-03T08:42:19.007Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta name="twitter:description" content="sass中：$（cil_$i）本意是希望定义多个变量如：$cil_1,$cil_2等，但是这样做是不行的.　　　@for $i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
+<meta name="twitter:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
 @mixin buju($i,$cols){
   .stati_#{$i}{
 background:white;
-@include">
+@">
 <meta name="twitter:image" content="http://i.imgur.com/fV7Mq5z.png">
 
 
@@ -285,7 +285,7 @@ background:white;
       
 
       
-        <p>　　sass中：$（cil_$i）本意是希望定义多个变量如：$cil_1,$cil_2等，但是这样做是不行的.　　　<br>@for $i from 1 to 5 是取到4，不是5<br>      如想是想实现下图：<br><img src="http://i.imgur.com/fV7Mq5z.png" alt="">  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下</p>
+        <p>　　sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　<br>@for \$i from 1 to 5 是取到4，不是5<br>      如想是想实现下图：<br><img src="http://i.imgur.com/fV7Mq5z.png" alt="">  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下</p>
 <pre><code>@mixin buju($i,$cols){
   .stati_#{$i}{
 background:white;
@@ -307,7 +307,7 @@ background: $cols;
 @include buju(3,#cf4b38);
 @include buju(4,#e1cd47);
 }
-</code></pre><p>用函数@function时，貌似也只能传一个参数 ，@function buju($i ,$cols)出错，@function buju($i  $cols)同样不对。for和each都因为没有$（cols_$i）的形式而不能用。　　</p>
+</code></pre><p>用函数@function时，貌似也只能传一个参数，@function buju(\$i,$cols)出错，@function buju(\$i\ \$cols)同样不对。for和each都因为没有\$(cols_\$i)的形式而不能用。　　</p>
 
       
     </div>
