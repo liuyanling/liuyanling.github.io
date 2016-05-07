@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="sass," />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -57,30 +57,19 @@
 
 
 
-<meta name="description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
+<meta name="description" content="特别常用的通用代码，弄清楚每个方法的作用很重要！　　在JS中，DOM0级、DOM2级与旧版本IE(8-)为对象添加事件的方法不同。为了以跨浏览器的方式处理事件，需要编写一段“通用代码”，即跨浏览器的事件处理程序。EventUtil是为了平衡不同浏览器间实现事件的差异或事件方法的差异而存在的。可兼容支持DOM0级、DOM2级的浏览器或IE浏览器EventUtil对象：
+var EventUtil =">
 <meta property="og:type" content="article">
-<meta property="og:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta property="og:url" content="http://yoursite.com/2016/04/03/mixin混入，-function函数，for循环小辨析/index.html">
+<meta property="og:title" content="跨浏览器事件对象EventUtil">
+<meta property="og:url" content="http://yoursite.com/2016/04/27/跨浏览器事件对象EventUtil/index.html">
 <meta property="og:site_name" content="Liuyanling's blog">
-<meta property="og:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
-<meta property="og:image" content="http://i.imgur.com/fV7Mq5z.png">
-<meta property="og:updated_time" content="2016-04-03T08:42:19.007Z">
+<meta property="og:description" content="特别常用的通用代码，弄清楚每个方法的作用很重要！　　在JS中，DOM0级、DOM2级与旧版本IE(8-)为对象添加事件的方法不同。为了以跨浏览器的方式处理事件，需要编写一段“通用代码”，即跨浏览器的事件处理程序。EventUtil是为了平衡不同浏览器间实现事件的差异或事件方法的差异而存在的。可兼容支持DOM0级、DOM2级的浏览器或IE浏览器EventUtil对象：
+var EventUtil =">
+<meta property="og:updated_time" content="2016-04-27T13:26:08.281Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta name="twitter:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
-<meta name="twitter:image" content="http://i.imgur.com/fV7Mq5z.png">
+<meta name="twitter:title" content="跨浏览器事件对象EventUtil">
+<meta name="twitter:description" content="特别常用的通用代码，弄清楚每个方法的作用很重要！　　在JS中，DOM0级、DOM2级与旧版本IE(8-)为对象添加事件的方法不同。为了以跨浏览器的方式处理事件，需要编写一段“通用代码”，即跨浏览器的事件处理程序。EventUtil是为了平衡不同浏览器间实现事件的差异或事件方法的差异而存在的。可兼容支持DOM0级、DOM2级的浏览器或IE浏览器EventUtil对象：
+var EventUtil =">
 
 
 
@@ -98,7 +87,7 @@ background:white;
   };
 </script>
 
-  <title> @mixin混入，@function函数，for循环小辨析 | Liuyanling's blog </title>
+  <title> 跨浏览器事件对象EventUtil | Liuyanling's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -246,7 +235,7 @@ background:white;
             
             
               
-                @mixin混入，@function函数，for循环小辨析
+                跨浏览器事件对象EventUtil
               
             
           </h1>
@@ -258,8 +247,8 @@ background:white;
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-04-03T16:05:16+08:00" content="2016-04-03">
-              2016-04-03
+            <time itemprop="dateCreated" datetime="2016-04-27T16:23:46+08:00" content="2016-04-27">
+              2016-04-27
             </time>
           </span>
 
@@ -285,29 +274,109 @@ background:white;
       
 
       
-        <p>　　sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　<br>@for \$i from 1 to 5 是取到4，不是5<br>      如想是想实现下图：<br><img src="http://i.imgur.com/fV7Mq5z.png" alt="">  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下</p>
-<pre><code>@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@include  size(300px,85px);
-@include  align_2;
-border-left:3px solid $cols ;
-box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
-&gt;div{
-@include  size(60px,60px);
-margin-right:20px;
+        <p>特别常用的通用代码，弄清楚每个方法的作用很重要！<br>　　在JS中，DOM0级、DOM2级与旧版本IE(8-)为对象添加事件的方法不同。为了以跨浏览器的方式处理事件，需要编写一段“通用代码”，即跨浏览器的事件处理程序。EventUtil是为了平衡不同浏览器间实现事件的差异或事件方法的差异而存在的。可兼容支持DOM0级、DOM2级的浏览器或IE浏览器<br>EventUtil对象：</p>
+<pre><code>var EventUtil = {
+addHandler: function (element, type, handler) {
+    if (element.addEventListener) {  //使用DOM2级方法添加事件  
+        element.addEventListener(type, handler, false);
+    } else if (element.attachEvent) {  //使用IE方法添加事件
+        element.attachEvent(&quot;on&quot; + type, handler);
+    } else {    //使用DOM0级方法添加事件
+        element[&quot;on&quot; + type] = handler;
     }
-    .col{
-background: $cols;
-    }
-   }
-  }
-@include buju(1,#43b0a8);
-@include buju(2,#3a8bc1);
-@include buju(3,#cf4b38);
-@include buju(4,#e1cd47);
-}
-</code></pre><p>用函数@function时，貌似也只能传一个参数，@function buju(\$i,$cols)出错，@function buju(\$i\ \$cols)同样不对。for和each都因为没有\$(cols_\$i)的形式而不能用。　　</p>
+}，
+removeHandler:function(element,type,handler){  //取消事件   
+    if(element.removeEventListener){         
+        element.removeEventListener(type,handler,false);      
+    }else if(element.detachEvent){         
+        element.detachEvent(&quot;on&quot;+type,handler);      
+    }else{  
+        element[&quot;on&quot;+type]=null;      
+        }   
+},
+getEvent:function(event){  //使用这个方法跨浏览器取得event对象      
+    return event?event:window.event;   
+},       
+getTarget:function(event){ //返回事件的实际目标      
+    return event.target||event.srcElement;   
+},
+preventDefault:function(event){   //阻止事件的默认行为      
+    if(event.preventDefault){         
+        event.preventDefault();       
+}else{         
+        event.returnValue=false;      
+    }   
+},   
+stopPropagation:function(event){  //立即停止事件在DOM中的传播  
+//避免触发注册在document.body上面的事件处理程序     
+    if(event.stopPropagation){         
+        event.stopPropagation();      
+    }else{         
+        event.cancelBubble=true;      
+    }   
+},    
+getRelatedTarget:function(event){  //获取mouseover和mouseout相关元素      
+    if(event.relatedTarget){         
+        return event.relatedTarget;      
+    }else if(event.toElement){      //兼容IE8-         
+        return event.toElement;              
+    }else if(event.formElement){         
+        return event.formElement;      
+    }else{         
+        return null;      
+    }   
+},          
+getButton:function(event){    //获取mousedown或mouseup按下或释放的按钮是鼠标中的哪一个 
+    if(document.implementation.hasFeature(&quot;MouseEvents&quot;,&quot;2.0&quot;)){
+        return event.button;     
+    }else{         
+        switch(event.button){   //将IE模型下的button属性映射为DOM模型下的button属性 
+            case 0:            
+            case 1:            
+            case 3:            
+            case 5:            
+            case 7:               
+                return 0;  //按下的是鼠标主按钮（一般是左键）            
+            case 2:           
+            case 6:              
+                return 2;  //按下的是中间的鼠标按钮            
+            case 4:              
+                return 1;  //鼠标次按钮（一般是右键）   
+
+        }    
+    } 
+},    
+getWheelDelta:function(event){ //获取表示鼠标滚轮滚动方向的数值      
+    if(event.wheelDelta){         
+        return (client.engine.opera&amp;&amp;client.engine.opera&lt;9.5?-event.wheelDelta:event.wheelDelta);      
+    }else{        
+        return -event.detail*40;      
+    }   
+},          
+getCharCode:function(event){   //以跨浏览器取得相同的字符编码，需在keypress事件中使用          
+    if(typeof event.charCode==&quot;number&quot;){         
+        return event.charCode;      
+    }else{        
+        return event.keyCode;    
+    }  
+}        
+};
+</code></pre><p><strong><font color="008b8b"> addHandler():</font></strong>视情况分别使用DOM2级，DOM0级和IE方法来添加事件。如IE9,Firefox，Chrome等直接第一个if，IE8及之前用第2个if，还无法添加的用DOM0级方法添加。<br>    <strong><font color="008b8b">getEvent():</font></strong>在兼容DOM的浏览器中，event变量只是简单的传入和返回，在IE浏览器中，event参数未定义，为undefined，所以就会返回window.event。<br><strong><font color="008b8b">getTarget():</font></strong>event有target属性就返target（DOM中），没有，就返srcElement属性（说明在IE里）。<br>    <strong><font color="008b8b">preventDefault():</font></strong>用于取消事件默认行为，event是DOM事件对象（DOM0级和DOM2级）时返if，是IE事件对象（IE浏览器里，用DOM0的或用IE事件处理程序中的方法即attachEvent（）创建）时返else。 <font color="0dsd8b">在其它兼容DOM的浏览器中，阻止特定事件的默认行为只需使用event对象自带的preventDefault( )方法，而在IE中，则需赋予event.returnValue的值为false才能阻止特定事件的默认行为</font><br>    <strong><font color="008b8b">stopPropagation():</font></strong>也是如此。<br>    <strong><font color="008b8b">getRelatedTarget():</font></strong>返相关元素。DOM通过event.relatedTarget返相关元素。只对事件mouseover和mouseout事件才含有值，其余事件值为null。IE8及之前版本不支持此属性，但mouseover时，IE的fromElement属性保存相关元素，mouseout时，toElement保存相关元素。（IE9支持所有。）<br>    <strong><font color="008b8b">getButton():</font></strong>在mousedown和mouseup事件中存在event.button属性，DOM中其值可能为0（左键），1（中间滚轮按钮），2（右键）。而IE8及之前版本的button有7个值。所以得映射一下。<br>    <strong><font color="008b8b">getWheelDelta():</font></strong>不常用</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    var btn = document.getElementById(&quot;myBtn&quot;);
+    btn.onclick = function(event){
+        event = EventUtil.getEvent(event);
+        var target = EventUtil.getTarget(event);         
+        alert(target.tagName);
+    };
+
+    EventUtil.addHandler(btn, &quot;click&quot;, function(event){
+        event = EventUtil.getEvent(event);
+        var target = EventUtil.getTarget(event);            
+        alert(target.tagName);
+    });     
+&lt;/script&gt;
+</code></pre><p><a href="https://segmentfault.com/a/1190000002455890" target="_blank" rel="external">https://segmentfault.com/a/1190000002455890</a><br><a href="http://www.th7.cn/web/js/201412/71141.shtml" target="_blank" rel="external">http://www.th7.cn/web/js/201412/71141.shtml</a></p>
 
       
     </div>
@@ -322,7 +391,7 @@ background: $cols;
       
         <div class="post-tags">
           
-            <a href="/tags/sass/" rel="tag">#sass</a>
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
           
         </div>
       
@@ -331,16 +400,16 @@ background: $cols;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/03/git与github问题汇总-2/" rel="next" title="git与github问题汇总(2)">
-                <i class="fa fa-chevron-left"></i> git与github问题汇总(2)
+              <a href="/2016/04/27/事件处理程序/" rel="next" title="事件处理程序">
+                <i class="fa fa-chevron-left"></i> 事件处理程序
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/27/事件1/" rel="prev" title="事件1">
-                事件1 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/04/27/事件对象/" rel="prev" title="事件对象">
+                事件对象 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

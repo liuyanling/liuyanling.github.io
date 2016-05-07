@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="sass," />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -57,30 +57,16 @@
 
 
 
-<meta name="description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
+<meta name="description" content="DOM中的事件对象：  无论指定事件处理程序时用了什么方法（DOM0级或DOM2级），都会传入event对象。用HTML特性指定事件处理程序时，变量event中存着event对象。  事件处理程序内部，this始终等于currentTarget，target为实际作用目标。  event对象的常用属性和方法：  event.target等极常用的。。。。  event.preventDefault">
 <meta property="og:type" content="article">
-<meta property="og:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta property="og:url" content="http://yoursite.com/2016/04/03/mixin混入，-function函数，for循环小辨析/index.html">
+<meta property="og:title" content="事件对象">
+<meta property="og:url" content="http://yoursite.com/2016/04/27/事件对象/index.html">
 <meta property="og:site_name" content="Liuyanling's blog">
-<meta property="og:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
-<meta property="og:image" content="http://i.imgur.com/fV7Mq5z.png">
-<meta property="og:updated_time" content="2016-04-03T08:42:19.007Z">
+<meta property="og:description" content="DOM中的事件对象：  无论指定事件处理程序时用了什么方法（DOM0级或DOM2级），都会传入event对象。用HTML特性指定事件处理程序时，变量event中存着event对象。  事件处理程序内部，this始终等于currentTarget，target为实际作用目标。  event对象的常用属性和方法：  event.target等极常用的。。。。  event.preventDefault">
+<meta property="og:updated_time" content="2016-04-27T13:22:12.671Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta name="twitter:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
-<meta name="twitter:image" content="http://i.imgur.com/fV7Mq5z.png">
+<meta name="twitter:title" content="事件对象">
+<meta name="twitter:description" content="DOM中的事件对象：  无论指定事件处理程序时用了什么方法（DOM0级或DOM2级），都会传入event对象。用HTML特性指定事件处理程序时，变量event中存着event对象。  事件处理程序内部，this始终等于currentTarget，target为实际作用目标。  event对象的常用属性和方法：  event.target等极常用的。。。。  event.preventDefault">
 
 
 
@@ -98,7 +84,7 @@ background:white;
   };
 </script>
 
-  <title> @mixin混入，@function函数，for循环小辨析 | Liuyanling's blog </title>
+  <title> 事件对象 | Liuyanling's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -246,7 +232,7 @@ background:white;
             
             
               
-                @mixin混入，@function函数，for循环小辨析
+                事件对象
               
             
           </h1>
@@ -258,8 +244,8 @@ background:white;
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-04-03T16:05:16+08:00" content="2016-04-03">
-              2016-04-03
+            <time itemprop="dateCreated" datetime="2016-04-27T17:24:34+08:00" content="2016-04-27">
+              2016-04-27
             </time>
           </span>
 
@@ -285,29 +271,23 @@ background:white;
       
 
       
-        <p>　　sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　<br>@for \$i from 1 to 5 是取到4，不是5<br>      如想是想实现下图：<br><img src="http://i.imgur.com/fV7Mq5z.png" alt="">  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下</p>
-<pre><code>@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@include  size(300px,85px);
-@include  align_2;
-border-left:3px solid $cols ;
-box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
-&gt;div{
-@include  size(60px,60px);
-margin-right:20px;
-    }
-    .col{
-background: $cols;
-    }
-   }
-  }
-@include buju(1,#43b0a8);
-@include buju(2,#3a8bc1);
-@include buju(3,#cf4b38);
-@include buju(4,#e1cd47);
-}
-</code></pre><p>用函数@function时，貌似也只能传一个参数，@function buju(\$i,$cols)出错，@function buju(\$i\ \$cols)同样不对。for和each都因为没有\$(cols_\$i)的形式而不能用。　　</p>
+        <p><font color="008b8b"><strong>DOM中的事件对象：</strong></font>  无论指定事件处理程序时用了什么方法（<font color="008b8b">DOM0级或DOM2级</font>），都会传入event对象。用HTML特性指定事件处理程序时，变量event中存着event对象。  事件处理程序内部，this始终等于currentTarget，target为实际作用目标。<br>  <font color="008b8b"><strong>event对象的常用属性和方法：</strong></font><br>  <font color="008b8b">event.target等极常用的</font>。。。。<br>  <font color="008b8b">event.preventDefault（）:</font> 阻止特定事件的默认行为。<br>  <font color="008b8b">event.stopPropagation（）:</font>用于立即停止事件在DOM层次中的传播。<br> <font color="008b8b">event.eventPhase属性:</font> 确定事件当前正位于事件流的哪个阶段。   </p>
+<p><font color="008b8b"><strong>IE(浏览器)中的事件对象：</strong></font>  与访问DOM中的event对象不同，访问IE中的event对象有几种不同的方式，取决于是用的什么方法（DOM0，DOM2两方法，IE两方法）指定的事件处理程序。在IE中，event参数是未定义的（undefined）。所以在EventUtil里提供的是window。event。使用DOM0级方法添加事件处理程序时，event为window的一个属性。</p>
+<pre><code>　　var btn ＝ document.getElementById(&apos;mybtn&apos;);  
+btn.onclick = function(){ 
+    var event = window.event; 　
+    alert(event.type);//&quot;click&quot; 
+} 
+</code></pre><p>attachEvent（）添加时（所以IE版本都有此方法），even对象作为唯一参数传入，也可通过window来访问event对象：</p>
+<pre><code>var btn = document.getElementById(&quot;myBtn&quot;); 
+btn.attachEvent(&quot;onclick&quot;, function(event){ 
+   alert(event.type); //&quot;click&quot; 
+}); 
+</code></pre><p>　如果event Handler 是通过HTML属性被授权的，event是作为一个变量被访问的，叫做event。  </p>
+<p><font color="008b8b"><strong>event对象的常用属性和方法：</strong></font><br>  <font color="008b8b">event.srcElement属性:</font> 事件的实际目标，与dom中的target属性相同。   </p>
+<p><font color="008b8b">event.returnValue（）方法:</font> 默认值是true，当设置成false时用以取消事件的默认行为。与dom中的preventDefault（）相同。      <font color="008b8b">event.cancleBubble属性:</font>默认值时false，但可以被设置成true来取消事件冒泡，与dom中的 stopPropagation()方法相同.</p>
+<p><a href="https://segmentfault.com/a/1190000002455890" target="_blank" rel="external">https://segmentfault.com/a/1190000002455890</a></p>
+<p><a href="http://www.jb51.net/article/30672.htm" target="_blank" rel="external">http://www.jb51.net/article/30672.htm</a></p>
 
       
     </div>
@@ -322,7 +302,7 @@ background: $cols;
       
         <div class="post-tags">
           
-            <a href="/tags/sass/" rel="tag">#sass</a>
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
           
         </div>
       
@@ -331,16 +311,16 @@ background: $cols;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/03/git与github问题汇总-2/" rel="next" title="git与github问题汇总(2)">
-                <i class="fa fa-chevron-left"></i> git与github问题汇总(2)
+              <a href="/2016/04/27/跨浏览器事件对象EventUtil/" rel="next" title="跨浏览器事件对象EventUtil">
+                <i class="fa fa-chevron-left"></i> 跨浏览器事件对象EventUtil
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/27/事件1/" rel="prev" title="事件1">
-                事件1 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/05/07/iconfont/" rel="prev" title="iconfont">
+                iconfont <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="sass," />
+  <meta name="keywords" content="css3," />
 
 
 
@@ -57,30 +57,22 @@
 
 
 
-<meta name="description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
+<meta name="description" content="在百度前端技术学院的任务25中用到了。 为什么要将icon（图标）做成字体？   　　　　
+　　自己用小图标做成字体文件。这样就可以直接使用字体的方式来调用小图标。
+　　在很多网站项目中，我们常常会用到各种透明小图标，然后网站要兼容各个浏览器，也可能会有多个尺寸，甚至还要考虑换肤等需求。那么我们就要将这些小图标输出为多种尺寸、颜色和文件格式，比如png8 alpha透明或者png8 index">
 <meta property="og:type" content="article">
-<meta property="og:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta property="og:url" content="http://yoursite.com/2016/04/03/mixin混入，-function函数，for循环小辨析/index.html">
+<meta property="og:title" content="iconfont">
+<meta property="og:url" content="http://yoursite.com/2016/05/07/iconfont/index.html">
 <meta property="og:site_name" content="Liuyanling's blog">
-<meta property="og:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
-<meta property="og:image" content="http://i.imgur.com/fV7Mq5z.png">
-<meta property="og:updated_time" content="2016-04-03T08:42:19.007Z">
+<meta property="og:description" content="在百度前端技术学院的任务25中用到了。 为什么要将icon（图标）做成字体？   　　　　
+　　自己用小图标做成字体文件。这样就可以直接使用字体的方式来调用小图标。
+　　在很多网站项目中，我们常常会用到各种透明小图标，然后网站要兼容各个浏览器，也可能会有多个尺寸，甚至还要考虑换肤等需求。那么我们就要将这些小图标输出为多种尺寸、颜色和文件格式，比如png8 alpha透明或者png8 index">
+<meta property="og:updated_time" content="2016-05-07T03:22:56.906Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta name="twitter:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
-<meta name="twitter:image" content="http://i.imgur.com/fV7Mq5z.png">
+<meta name="twitter:title" content="iconfont">
+<meta name="twitter:description" content="在百度前端技术学院的任务25中用到了。 为什么要将icon（图标）做成字体？   　　　　
+　　自己用小图标做成字体文件。这样就可以直接使用字体的方式来调用小图标。
+　　在很多网站项目中，我们常常会用到各种透明小图标，然后网站要兼容各个浏览器，也可能会有多个尺寸，甚至还要考虑换肤等需求。那么我们就要将这些小图标输出为多种尺寸、颜色和文件格式，比如png8 alpha透明或者png8 index">
 
 
 
@@ -98,7 +90,7 @@ background:white;
   };
 </script>
 
-  <title> @mixin混入，@function函数，for循环小辨析 | Liuyanling's blog </title>
+  <title> iconfont | Liuyanling's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -246,7 +238,7 @@ background:white;
             
             
               
-                @mixin混入，@function函数，for循环小辨析
+                iconfont
               
             
           </h1>
@@ -258,8 +250,8 @@ background:white;
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-04-03T16:05:16+08:00" content="2016-04-03">
-              2016-04-03
+            <time itemprop="dateCreated" datetime="2016-05-07T11:00:19+08:00" content="2016-05-07">
+              2016-05-07
             </time>
           </span>
 
@@ -285,29 +277,11 @@ background:white;
       
 
       
-        <p>　　sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　<br>@for \$i from 1 to 5 是取到4，不是5<br>      如想是想实现下图：<br><img src="http://i.imgur.com/fV7Mq5z.png" alt="">  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下</p>
-<pre><code>@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@include  size(300px,85px);
-@include  align_2;
-border-left:3px solid $cols ;
-box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
-&gt;div{
-@include  size(60px,60px);
-margin-right:20px;
-    }
-    .col{
-background: $cols;
-    }
-   }
-  }
-@include buju(1,#43b0a8);
-@include buju(2,#3a8bc1);
-@include buju(3,#cf4b38);
-@include buju(4,#e1cd47);
-}
-</code></pre><p>用函数@function时，貌似也只能传一个参数，@function buju(\$i,$cols)出错，@function buju(\$i\ \$cols)同样不对。for和each都因为没有\$(cols_\$i)的形式而不能用。　　</p>
+        <p>  <font color="0dsd8b">在百度前端技术学院的任务25中用到了。</font><br> <strong><font color="008b8b">为什么要将icon（图标）做成字体？</font></strong>   　　　　</p>
+<p>　　自己用小图标做成字体文件。这样就可以直接使用字体的方式来调用小图标。</p>
+<p>　　在很多网站项目中，我们常常会用到各种透明小图标，然后网站要兼容各个浏览器，也可能会有多个尺寸，甚至还要考虑换肤等需求。那么我们就要将这些小图标输出为多种尺寸、颜色和文件格式，比如png8 alpha透明或者png8 index透明等。</p>
+<p>使用字体来实现图标就有很多优势：<br>　　字体文件小，一般20-50kb；<br>　　容易编辑和维护，尺寸和颜色可以用css来控制；<br>　　透明完全兼容IE6；</p>
+<p><a href="http://www.kuqin.com/shuoit/20141102/342991.html" target="_blank" rel="external">http://www.kuqin.com/shuoit/20141102/342991.html</a><br><a href="http://help.ecmoban.com/article-2082.html" target="_blank" rel="external">http://help.ecmoban.com/article-2082.html</a><br><a href="http://www.tuicool.com/articles/B32uYj" target="_blank" rel="external">http://www.tuicool.com/articles/B32uYj</a><br><a href="http://www.iconfont.cn/" target="_blank" rel="external">http://www.iconfont.cn/</a><br><a href="http://jingyan.baidu.com/article/14bd256e4bd36bbb6c26126e.html#5827690-tsina-1-80491-fe183374908e783f9dbfe7dcb7ed2bb5" target="_blank" rel="external">http://jingyan.baidu.com/article/14bd256e4bd36bbb6c26126e.html#5827690-tsina-1-80491-fe183374908e783f9dbfe7dcb7ed2bb5</a></p>
 
       
     </div>
@@ -322,7 +296,7 @@ background: $cols;
       
         <div class="post-tags">
           
-            <a href="/tags/sass/" rel="tag">#sass</a>
+            <a href="/tags/css3/" rel="tag">#css3</a>
           
         </div>
       
@@ -331,17 +305,13 @@ background: $cols;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/03/git与github问题汇总-2/" rel="next" title="git与github问题汇总(2)">
-                <i class="fa fa-chevron-left"></i> git与github问题汇总(2)
+              <a href="/2016/04/27/事件对象/" rel="next" title="事件对象">
+                <i class="fa fa-chevron-left"></i> 事件对象
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/27/事件1/" rel="prev" title="事件1">
-                事件1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

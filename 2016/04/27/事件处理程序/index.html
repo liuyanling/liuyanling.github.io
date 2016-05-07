@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="sass," />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -57,30 +57,40 @@
 
 
 
-<meta name="description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
+<meta name="description" content="以下上对高程3第13章的一些学习总结。  
+HTML事件处理程序：
+
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    function showMessage(){
+        alert(&amp;quot;Hello world!&amp;quot;);
+    }
+&amp;lt;/script&amp;gt;
+&amp;lt;input type=&amp;quot;butto">
 <meta property="og:type" content="article">
-<meta property="og:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta property="og:url" content="http://yoursite.com/2016/04/03/mixin混入，-function函数，for循环小辨析/index.html">
+<meta property="og:title" content="事件处理程序">
+<meta property="og:url" content="http://yoursite.com/2016/04/27/事件处理程序/index.html">
 <meta property="og:site_name" content="Liuyanling's blog">
-<meta property="og:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
-<meta property="og:image" content="http://i.imgur.com/fV7Mq5z.png">
-<meta property="og:updated_time" content="2016-04-03T08:42:19.007Z">
+<meta property="og:description" content="以下上对高程3第13章的一些学习总结。  
+HTML事件处理程序：
+
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    function showMessage(){
+        alert(&amp;quot;Hello world!&amp;quot;);
+    }
+&amp;lt;/script&amp;gt;
+&amp;lt;input type=&amp;quot;butto">
+<meta property="og:updated_time" content="2016-04-27T13:08:06.468Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="@mixin混入，@function函数，for循环小辨析">
-<meta name="twitter:description" content="sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　@for \$i from 1 to 5 是取到4，不是5      如想是想实现下图：  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下
-@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@">
-<meta name="twitter:image" content="http://i.imgur.com/fV7Mq5z.png">
+<meta name="twitter:title" content="事件处理程序">
+<meta name="twitter:description" content="以下上对高程3第13章的一些学习总结。  
+HTML事件处理程序：
+
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    function showMessage(){
+        alert(&amp;quot;Hello world!&amp;quot;);
+    }
+&amp;lt;/script&amp;gt;
+&amp;lt;input type=&amp;quot;butto">
 
 
 
@@ -98,7 +108,7 @@ background:white;
   };
 </script>
 
-  <title> @mixin混入，@function函数，for循环小辨析 | Liuyanling's blog </title>
+  <title> 事件处理程序 | Liuyanling's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -246,7 +256,7 @@ background:white;
             
             
               
-                @mixin混入，@function函数，for循环小辨析
+                事件处理程序
               
             
           </h1>
@@ -258,8 +268,8 @@ background:white;
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-04-03T16:05:16+08:00" content="2016-04-03">
-              2016-04-03
+            <time itemprop="dateCreated" datetime="2016-04-27T15:19:32+08:00" content="2016-04-27">
+              2016-04-27
             </time>
           </span>
 
@@ -285,29 +295,80 @@ background:white;
       
 
       
-        <p>　　sass中：\$(cil_\$i)本意是希望定义多个变量如：\$cil\_1,\$cil\_2等，但是这样做是不行的.　　　<br>@for \$i from 1 to 5 是取到4，不是5<br>      如想是想实现下图：<br><img src="http://i.imgur.com/fV7Mq5z.png" alt="">  涉及到i取1,2,3,4 颜色取4色，涉及两变量，我们代码如下</p>
-<pre><code>@mixin buju($i,$cols){
-  .stati_#{$i}{
-background:white;
-@include  size(300px,85px);
-@include  align_2;
-border-left:3px solid $cols ;
-box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.1);
-&gt;div{
-@include  size(60px,60px);
-margin-right:20px;
+        <p>以下上对高程3第13章的一些学习总结。  </p>
+<font color="008b8b"><strong>HTML事件处理程序：</strong></font>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    function showMessage(){
+        alert(&quot;Hello world!&quot;);
     }
-    .col{
-background: $cols;
-    }
-   }
-  }
-@include buju(1,#43b0a8);
-@include buju(2,#3a8bc1);
-@include buju(3,#cf4b38);
-@include buju(4,#e1cd47);
-}
-</code></pre><p>用函数@function时，貌似也只能传一个参数，@function buju(\$i,$cols)出错，@function buju(\$i\ \$cols)同样不对。for和each都因为没有\$(cols_\$i)的形式而不能用。　　</p>
+&lt;/script&gt;
+&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; onclick=&quot;showMessage()&quot; /&gt;
+</code></pre><p>函数中的this指事件的目标元素。变量event可直接访问事件对象。</p>
+<pre><code>&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; onclick=&quot;alert(event.type)&quot;&gt;
+</code></pre><font color="008b8b"><strong>DOM0级事件处理程序：</strong></font>
+
+<pre><code>var btn = document.getElementById(&quot;myBtn&quot;);
+btn.onclick = function(){
+    alert(this.id);
+};   
+var removeBtn = document.getElementById(&quot;myRemoveBtn&quot;);
+removeBtn.onclick = function(){
+    btn.onclick = null;  //删除通过dom0级方法指定的事件处理程序
+};
+</code></pre><p>this指当前元素。一个事件只支持一个事件处理程序。event对象作为window对象的一个属性存在。</p>
+<pre><code>&lt;body&gt;
+&lt;a href=&quot;http://www.nczonline.net/&quot; id=&quot;myLink&quot;&gt;Click Me&lt;/a&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var link = document.getElementById(&quot;myLink&quot;);
+    link.onclick = function(event){
+        event.preventDefault(); //阻止特定事件的默认行为，阻止链接导航调转至href这一默认行为
+    };    
+&lt;/script&gt;
+&lt;/body
+</code></pre><font color="008b8b"><strong>DOM2级事件处理程序：</strong></font> <font color="0dsd8b">IE9、Opera、Firefox、Chrome和Safari都支持DOM2级事件处理程序。</font>
+
+<pre><code>&lt;body&gt;
+&lt;input type=&quot;button&quot; id=&quot;myBtn&quot; value=&quot;Click Me&quot; /&gt;
+&lt;p&gt;IE中这段代码不起作用&lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var btn = document.getElementById(&quot;myBtn&quot;);
+    btn.addEventListener(&quot;click&quot;, function(){
+        alert(this.id);
+    }, false);
+&lt;/script&gt;
+&lt;/body&gt;
+</code></pre><p>可以添加多个事件处理程序（一个事件上），按添加的顺序触发。与DOM0级方法一样，此事件处理程序也是在其依附的元素的作用域中运行。this为该目标元素。</p>
+<pre><code>&lt;body&gt;
+&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; id=&quot;myBtn&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var btn = document.getElementById(&quot;myBtn&quot;);
+    document.body.addEventListener(&quot;click&quot;, function(event){
+        alert(event.eventPhase);   //1，捕获阶段调用的事件处理程序，event.eventPhase等于1，若事件处理程序处于目标对象，等于2，冒泡阶段调用的等于3.
+    }, true);
+&lt;/script&gt;
+&lt;/body&gt;
+</code></pre><font color="008b8b"><strong>IE事件处理程序：</strong></font> <font color="0dsd8b">支持IE事件处理程序的浏览器有IE（在旧版本IE（代表IE8-）中<br>指定事件处理程序的方法为attachEvent( )）和Opera。attachEvent（）添加的事件处理程序都被添加到了冒泡阶段。</font>
+
+<pre><code>var btn = document.getElementById(&quot;myBtn&quot;);
+   btn.attachEvent(&quot;onclick&quot;, function(){
+       alert(&quot;Clicked&quot;);
+   });
+</code></pre><p>this为window。事件处理程序在全局作用域中运行。可以添加多个事件处理程序（一个事件上），按与添加的顺序相反的顺序触发，即先进后出。</p>
+<pre><code> &lt;body&gt;
+&lt;input type=&quot;button&quot; id=&quot;myBtn&quot; value=&quot;Click Me&quot; /&gt;
+&lt;p&gt;This example only works in Internet Explorer.&lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var btn = document.getElementById(&quot;myBtn&quot;);
+    btn.onclick = function(){
+        alert(window.event.srcElement === this); //true
+    };   
+    btn.attachEvent(&quot;onclick&quot;, function(event){
+        alert(event.srcElement === this);  //false，event.srcElement同DOM中的target属性，为实际目标
+    }); 
+&lt;/script&gt;
+&lt;/body&gt;
+</code></pre><p>DOM2和IE事件处理程序一般都直接调用跨浏览器的事件对象EventUtil了，不怎么分开用。</p>
 
       
     </div>
@@ -322,7 +383,7 @@ background: $cols;
       
         <div class="post-tags">
           
-            <a href="/tags/sass/" rel="tag">#sass</a>
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
           
         </div>
       
@@ -331,16 +392,16 @@ background: $cols;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/03/git与github问题汇总-2/" rel="next" title="git与github问题汇总(2)">
-                <i class="fa fa-chevron-left"></i> git与github问题汇总(2)
+              <a href="/2016/04/27/事件1/" rel="next" title="事件1">
+                <i class="fa fa-chevron-left"></i> 事件1
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/27/事件1/" rel="prev" title="事件1">
-                事件1 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/04/27/跨浏览器事件对象EventUtil/" rel="prev" title="跨浏览器事件对象EventUtil">
+                跨浏览器事件对象EventUtil <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
